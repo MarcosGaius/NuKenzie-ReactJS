@@ -8,12 +8,14 @@ export default function Form({
 }) {
   function handleFormSubmit(event) {
     const form = event.target.form;
-    const txnType = form.txnTypes.value;
+    let txnType = form.txnTypes.value;
     const txnDescription = form.txnDescription.value;
     let txnValue = Number(form.txnValue.value);
 
     if (txnType === "saída" && txnValue > 0) {
       txnType -= txnValue * 2;
+    } else if (txnType === "entrada" && txnValue < 0) {
+      txnType = "saída";
     }
 
     const newTxn = {
