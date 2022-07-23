@@ -15,7 +15,7 @@ export default function Form({
     if (txnType === "saída" && txnValue > 0) {
       txnType -= txnValue * 2;
     } else if (txnType === "entrada" && txnValue < 0) {
-      txnType = "saída";
+      txnValue += txnValue * 2;
     }
 
     const newTxn = {
