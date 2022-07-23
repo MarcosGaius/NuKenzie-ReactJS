@@ -8,13 +8,21 @@ export default function Form({
 }) {
   function handleFormSubmit(event) {
     const form = event.target.form;
+    const txnType = form.txnTypes.value;
+    const txnDescription = form.txnDescription.value;
+    let txnValue = Number(form.txnValue.value);
+
+    if (txnType === "saída" && txnValue > 0) {
+      txnType -= txnValue * 2;
+    }
+
     const newTxn = {
-      description: form.txnDescription.value,
-      type: form.txnTypes.value,
-      value: Number(form.txnValue.value),
+      description: txnDescription,
+      type: txnType,
+      value: txnValue,
     };
 
-    if (Object.values(newTxn).includes("")) {
+    if (Object.values(newTxn).includes("") || newTxn.value === 0) {
       return;
     }
 
