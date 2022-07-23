@@ -13,7 +13,7 @@ export default function Form({
     let txnValue = Number(form.txnValue.value);
 
     if (txnType === "saída" && txnValue > 0) {
-      txnType -= txnValue * 2;
+      txnValue -= txnValue * 2;
     } else if (txnType === "entrada" && txnValue < 0) {
       txnValue += txnValue * 2;
     }
