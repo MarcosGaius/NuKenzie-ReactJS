@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: 0, 0, 0;
+  --grey-0: 248, 249, 250;
+  --grey-1: 248, 249, 250;
+  --grey-2: 233, 236, 239;
+  --grey-3: 52, 58, 64;
+  --grey-4: 33, 37, 41;
+  --primary-color: 253, 55, 126;
+  --secondary-color: 227, 73, 129;
+  --success-color: 3, 184, 152;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input,
+select {
+  font-family: "Inter", sans-serif;
+  height: 2.6rem;
+  width: 100%;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  padding: 0.8rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  background-color: rgb(var(--grey-0));
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>');
+  background-size: 0.6rem;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  cursor: pointer;
+}
+
+input:focus,
+select:focus {
+  outline: 1px solid rgba(var(--grey-4));
+  background-color: #ffffff;
+}
+
+option {
+  background-color: rgba(var(--grey-1));
+}

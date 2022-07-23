@@ -1,0 +1,77 @@
+.cardContainer {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(var(--grey-1));
+  border-radius: 8px;
+}
+
+.cardContainer__detail {
+  width: 3px;
+  background-color: rgb(var(--success-color));
+  border-radius: 8px 0 0 8px;
+}
+
+.cardContainer__detail-deposit {
+  background-color: rgb(var(--grey-2));
+}
+
+.cardContainer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 49%;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+.cardContainer__info p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(var(--grey-4));
+}
+
+.cardContainer__info small {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgb(var(--grey-3));
+}
+
+.cardContainer__price {
+  width: 25%;
+  padding: 1rem;
+  color: rgb(var(--grey-4));
+  font-weight: 400;
+  font-size: 0.9rem;
+  overflow: auto;
+}
+
+.cardContainer__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 25%;
+  padding: 1rem;
+}
+
+.cardContainer__button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(var(--grey-2));
+  width: 22px;
+  height: 22px;
+  color: rgb(var(--grey-3));
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+.cardContainer__button button:hover {
+  color: rgb(var(--grey-1));
+  background-color: rgb(var(--grey-3));
+}

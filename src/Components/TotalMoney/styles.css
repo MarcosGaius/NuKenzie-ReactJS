@@ -1,0 +1,42 @@
+.balanceContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(var(--grey-2));
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+  width: 100%;
+  height: fit-content;
+}
+
+.balanceContainer__text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.balanceContainer__title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(var(--grey-4));
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.balanceContainer__subtitle {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(var(--grey-3));
+  margin: 0;
+}
+
+.balanceContainer__value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: auto;
+  height: 100%;
+  width: 40%;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(var(--primary-color));
+}

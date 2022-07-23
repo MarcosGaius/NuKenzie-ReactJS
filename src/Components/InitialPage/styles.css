@@ -1,0 +1,76 @@
+.initialPageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--grey-4));
+}
+
+.initialPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .initialPageContainer {
+    flex-direction: row;
+  }
+}
+
+.initialPageContainer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .initialPageContainer__info {
+    align-items: flex-start;
+    width: 50%;
+    padding: 3.5rem;
+  }
+}
+
+.initialPageContainer__info p {
+  font-weight: 800;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .initialPageContainer__info p {
+    text-align: start;
+  }
+}
+
+.initialPageContainer__info small {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.initialPageContainer__info button {
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.initialPageContainer__icon {
+  display: none;
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .initialPageContainer__icon {
+    display: block;
+  }
+}
+
+.initialPageContainer__icon img {
+  width: 100%;
+}
